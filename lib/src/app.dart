@@ -7,10 +7,33 @@ class ConversorDeMoedas extends StatelessWidget {
     return MaterialApp(
       home: HomeView(),
       theme: ThemeData(
-        primaryColor: Colors.yellow[400],
+        primaryColor: Colors.orange[200],
+        hintColor: Colors.white,
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.amber,
+            ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.amber,
+            ),
+          ),
+          hintStyle: TextStyle(
+            color: Colors.amber,
+          ),
+        ),
         canvasColor: Colors.black12,
         accentColor: Colors.yellow,
         fontFamily: 'PermanentMarker',
+        textTheme: TextTheme(
+          title: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
         appBarTheme: AppBarTheme(
           color: Colors.orange[500],
           elevation: 15,
